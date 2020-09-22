@@ -1,0 +1,21 @@
+{
+  "name": "score-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bestzip": "^2.1.5",
+    "msgpack-lite": "0.1.26",
+    "node-fetch": "2.6.0"
+  },
+  "devDependencies": {
+    "lambda-local": "^1.7.2"
+  },
+  "scripts": {
+    "ok": "lambda-local -l index.js -h handler -e examples/demo.js",
+    "zip": "mkdir -p dist; bestzip dist/build.zip index.js node_modules package.json",
+    "build": "npm run zip"
+  },
+  "author": "Tomi De Lucca",
+  "license": "ISC"
+}
