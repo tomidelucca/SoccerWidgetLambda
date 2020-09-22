@@ -47,7 +47,7 @@ module.exports = {
     "resource": "/shipping/calculator",
     "httpMethod": "GET",
     "queryStringParameters": {
-        "team_id": "40031",
+        "team_id": "3182",
         "utc_offset": "-3"
     },
     "stageVariables": {

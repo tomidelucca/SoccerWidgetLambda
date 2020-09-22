@@ -1,7 +1,6 @@
 const https = require('https');
 const fetch = require('node-fetch');
 const msgpack = require("msgpack-lite");
-const { match } = require('assert');
 
 const RECENT_BASE = "https://api.forzafootball.net/v1/teams/%{id}/recent_matches"
 const IMAGE_BASE = "https://images.footballaddicts.se/multiball"
@@ -44,7 +43,6 @@ function calculateTitle(team, score, index) {
 
     return mapToEmojiNumber(score.current[index]) + " " + team.name
 }
-
 
 const numbers = ['0️⃣', '1️⃣', '2️⃣', '3️⃣', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣'];
 
